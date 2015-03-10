@@ -11,9 +11,9 @@ module typescriptApp
 		'ngSanitize'
 	]);
 	myApp
-		.controller('mainCtrl', MainCtrl)
-		.controller('aboutCtrl', AboutCtrl);
-		
+		.controller('mainCtrl', typescriptApp.MainCtrl)
+		.controller('aboutCtrl', typescriptApp.AboutCtrl);
+
 	myApp.config(function ($routeProvider) {
 		$routeProvider
 		.when('/', {
